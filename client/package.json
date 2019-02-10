@@ -1,0 +1,60 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3024",
+  "dependencies": {
+    "@mdi/font": "^3.4.93",
+    "@mdi/js": "^3.4.93",
+    "@mdi/react": "^1.1.0",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.2.1",
+    "classnames": "^2.2.5",
+    "google-maps-react": "^2.0.2",
+    "intl-locales-supported": "^1.0.0",
+    "jquery": "^3.3.1",
+    "material-ui": "^0.19.4",
+    "material-ui-persian-date-picker-utils": "^0.1.2",
+    "moment": "^2.24.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-bootstrap-sweetalert": "^4.4.1",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "^16.2.0",
+    "react-geocode": "^0.1.2",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-star-rating": "^1.4.2",
+    "react-star-rating-component": "^1.3.0",
+    "react-swipeable-views": "^0.12.12",
+    "react-tap-event-plugin": "^3.0.2",
+    "recharts": "^1.0.0-beta.10",
+    "redux": "^3.7.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11",
+    "node-sass": "^4.7.2",
+    "react-scripts": "^1.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "styles": "gulp"
+  },
+  "false": {},
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

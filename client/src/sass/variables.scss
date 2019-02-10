@@ -1,0 +1,63 @@
+// Color
+$white: #fff;
+$black: #000;
+$mat-black: #263238;
+$light-black: #38474f;
+
+
+
+$color-primary: #258df2;
+$color-primary-hover: darken($color-primary, 10%);
+$color-secondary: #40c741;
+$color-body-bg: #fbfcfd;
+$color-bg-white: #fff;
+
+$color-warning: #fdba2c;
+
+$color-danger: #e64043;
+
+$color-green: #2bcdbd;
+$color-purple: #e884f9;
+
+
+// Font family
+$font-family-primary: 'Roboto', sans-serif;
+
+// Font color
+$font-color-base: #2a3134;
+$font-color-light: lighten($font-color-base, 25%);
+$font-color-lighter: lighten($font-color-base, 45%);
+
+$font-color-white: $white;
+
+// Font weight
+$font-weight-light: 300;
+$font-weight-base: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 600;
+
+$base-font-size : 14px;
+
+
+// Padding
+$padding-base: 15px;
+$padding-small: 10px;
+$padding-medium: 20px;
+$padding-large: 30px;
+$padding-5: 5px;
+
+//  Margin
+$margin-base: 15px;
+$margin-small: 10px;
+$margin-medium: 20px;
+$margin-large: 30px;
+
+
+// Some width and height
+$header-icon-width: 35px;
+$notification-width: 300px;
+$noti-icon-width: 30px;
+$circle-icon-width: 50px;
+
+// Border radius
+$border-radius: 3px;

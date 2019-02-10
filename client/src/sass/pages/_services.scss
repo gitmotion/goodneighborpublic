@@ -1,0 +1,46 @@
+.an-services {
+  position: relative;
+  &.center-align {
+    .an-service-single {
+      text-align: center;
+      i {
+        margin: 0 auto $margin-base * 2;
+      }
+    }
+  }
+}
+
+.an-service-single {
+  position: relative;
+  margin-bottom: $margin-base * 2;
+  background: $color-bg-white;
+  padding: $padding-large;
+  text-align: center;
+  @include an-box-shadow;
+
+  &:hover {
+    i {
+      color: $color-primary;
+      border-color: $color-primary;
+    }
+  }
+
+  i {
+    color: $color-primary;
+    font-size: $font-size-h1;
+    padding-bottom: $padding-medium;
+  }
+
+  h4 {
+    padding-bottom: $padding-base;
+    font-size: $font-size-h5;
+    margin: 0;
+    line-height: $line-height-base;
+  }
+
+  p {
+    color: $font-color-light;
+    margin: 0;
+    font-weight: $font-weight-base;
+  }
+}

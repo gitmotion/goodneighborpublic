@@ -1,0 +1,123 @@
+.about-box-single {
+  position: relative;
+  margin-bottom: $margin-large;
+
+  p {
+    opacity: .8;
+  }
+}
+
+.inner-box-title {
+  position: relative;
+  padding: 0 0 $padding-base;
+  border-bottom: 2px solid $color-primary;
+  font-size: $font-size-h5;
+  text-transform: uppercase;
+  margin-top: 0;
+
+  &.full {
+    border-bottom: 0;
+  }
+}
+
+
+
+
+.an-team-single {
+  position: relative;
+  width: 100%;
+  @include transition;
+  margin-bottom: $margin-base * 2;
+  @include an-box-shadow;
+
+  &:hover {
+    @include an-box-shadow;
+
+    .image-container {
+      .overlay {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &.light-bg {
+    .user-details {
+      background: $color-bg-white;
+      h4 a, p {
+        color: $font-color-base
+      }
+    }
+  }
+
+  .image-container {
+    position: relative;
+
+    .overlay {
+      @include overlay();
+      @include display(flex);
+      @include align-items(center);
+      @include justify-content(center);
+      @include transition();
+
+      opacity: 0;
+      visibility: hidden;
+
+      .small-social {
+        li {
+          a {
+            i {
+              font-size: $font-size-h3;
+            }
+            &:hover {
+              color: $color-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  .user-details {
+    padding: $padding-base;
+    background: $color-primary;
+    h4 {
+      margin: 0;
+      line-height: $line-height-base;
+      text-transform: uppercase;
+      font-size: $font-size-h5;
+      a {
+        color: $font-color-white;
+        display: block;
+      }
+    }
+    p {
+      margin: 0;
+      color: $font-color-base;
+      opacity: .7;
+      font-size: $font-size-base;
+    }
+
+    .small-social {
+      padding-top: $padding-base;
+    }
+  }
+}
+
+
+.small-social {
+  @extend .list-inline;
+  margin: 0;
+  li {
+    display: inline-block;
+    padding: $padding-5 + 2;
+    a {
+      color: $font-color-white;
+    }
+  }
+}

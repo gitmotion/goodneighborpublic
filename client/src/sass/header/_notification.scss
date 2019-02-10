@@ -1,0 +1,85 @@
+.notification-trigger {
+
+}
+
+.slide-content {
+  position: fixed;
+  top: 65px;
+  right: -$notification-width;
+  width: $notification-width;
+  background: $white;
+  height: calc(100% - 55px);
+  padding: $padding-medium;
+  overflow: scroll;
+  border-top: 2px solid $color-secondary;
+  @include an-box-shadow();
+  @include transition();
+
+  &.toggle {
+    right: 0;
+  }
+
+  h6 {
+    padding-bottom: $padding-medium;
+  }
+}
+
+.notification-single {
+  position: relative;
+  width: 100%;
+  padding-left: $padding-base * 3;
+  padding-bottom: $padding-medium;
+
+  .avatar {
+    @include background-property;
+
+
+    width: $noti-icon-width;
+    height: $noti-icon-width;
+    position: absolute;
+    left: 0;
+    @include border-radius(50%);
+    @include an-box-shadow();
+
+    &.avatar-icon {
+      background: rgba($color-primary, .3);
+      color: $color-primary;
+      font-size: $base-font-size - 2;
+      @include flex-center();
+      @include an-box-shadow();
+    }
+    &.success {
+      background: rgba($color-secondary, .3);
+      color: $color-secondary;
+    }
+
+    &.warning {
+      background: rgba($color-warning, .3);
+      color: $color-warning;
+    }
+
+    &.danger {
+      background: rgba($color-danger, .3);
+      color: $color-danger;
+    }
+  }
+
+  .details {
+    color: $font-color-light;
+    font-size: $base-font-size;
+    margin-bottom: $margin-small - 2;
+
+    a {
+      color: $font-color-base;
+      padding-right: $padding-5;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+  .time {
+    font-size: $base-font-size - 2;
+    color: $font-color-lighter;
+    margin: 0;
+  }
+}

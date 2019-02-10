@@ -1,0 +1,137 @@
+// Fileanme : _mixins.scss
+//
+// Some basic mixin fro avoididing repeat code
+
+// use transition mixin to use any type of transition effect
+@mixin transition($property: all, $time: .3s, $method: ease) {
+  transition: $property $time $method;
+}
+// box shadow
+@mixin an-box-shadow() {
+  -webkit-box-shadow: 0 6px 25px 0 rgba($mat-black, .2);
+  -moz-box-shadow:  0 6px 25px 0 rgba($mat-black, .2);
+  box-shadow:  0 6px 25px 0 rgba($mat-black, .2);
+}
+
+// box shadow
+@mixin an-box-shadow-small() {
+  box-shadow: 0 4px 16px -2px rgba(0,0,0,.1), 0 0 0 1px rgba(0,0,0,.02);
+}
+// border
+@mixin border($value) {
+  border: 1px solid $value;
+}
+
+@mixin border-bottom($value) {
+  border-bottom: 1px solid $value;
+}
+
+@mixin border-top($value) {
+  border-top: 1px solid $value;
+}
+
+@mixin border-left($value) {
+  border-left: 1px solid $value;
+}
+
+@mixin border-right($value) {
+  border-right: 1px solid $value;
+}
+
+@mixin border-radius($value) {
+  border-radius: $value;
+}
+
+// Background image poistioning
+@mixin background-property {
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+// Text wrappign mixin
+@mixin text-wrapping {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+// box shadow for all body content
+
+
+
+// flexbox mixing
+
+@mixin display($value) {
+  display: $value;
+}
+
+@mixin align-items($value) {
+  align-items: $value;
+}
+
+@mixin justify-content($value) {
+  justify-content: $value;
+}
+
+@mixin flex-wrap($value) {
+  flex-wrap: $value;
+}
+
+@mixin flex-grow($value) {
+  flex-grow: $value;
+}
+
+@mixin flex-direction($value) {
+  flex-direction: $value;
+}
+
+@mixin text-align($value) {
+  text-align: $value;
+}
+
+
+
+
+@mixin flex-center() {
+  @include display(flex);
+  @include align-items(center);
+  @include justify-content(center);
+}
+
+@mixin flex-space-between() {
+  @include display(flex);
+  @include align-items(center);
+  @include justify-content(space-between);
+  @include flex-wrap(wrap);
+}
+
+
+// overlay
+@mixin overlay() {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba($black, .6);
+  z-index: 9;
+  @include transition();
+}
+
+
+// Text overflow mixins
+@mixin text-overflow {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+
+
+

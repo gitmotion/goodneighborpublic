@@ -1,0 +1,63 @@
+@import 'variables';
+
+@import './vendors/bootstrap/variables';
+@import './vendors/bootstrap/mixins';
+
+@import './mixins/mixins';
+
+
+// Base
+@import './base/scaffolding';
+@import './base/typography';
+@import './base/buttons';
+@import './base/page-content';
+@import './base/forms';
+
+// Header
+@import './header/header';
+@import './header/notification';
+
+@import './sidebar/sidebar';
+@import './sidebar/navbar';
+
+// Icon box
+@import './iconbox/iconbox';
+
+
+// Components
+@import './components/circleicon';
+@import './components/panel';
+@import './components/appbar';
+@import './components/table';
+
+// Charts
+@import './charts/charts';
+
+// Grid example
+@import './grid/_grid-example.scss';
+
+// Utilities
+@import './utilities/utilities';
+
+// Product
+@import './product/product';
+@import './product/order-review';
+
+// Banner
+@import './banner/banner';
+
+// Pages
+@import './pages/about-us';
+@import './pages/services';
+@import './pages/contact';
+@import './pages/blog';
+@import './pages/price';
+
+// Other pages
+@import "./other-pages/login";
+
+// Footer
+@import './footer/footer';
+
+// style switcher
+@import './style-switcher/style-switcher';

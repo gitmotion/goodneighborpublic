@@ -1,0 +1,21 @@
+.re-page-banner {
+  position: relative;
+  height: 250px;
+  margin: -$margin-large;
+  margin-top: -($margin-large + 5);
+  margin-bottom: $margin-large * 2;
+  @include flex-center();
+
+  .overlay {
+    @include overlay();
+  }
+
+  h1 {
+    position: relative;
+    z-index: 20;
+    color: $font-color-white;
+    margin: 0;
+    font-size: $font-size-h1 * 1.3;
+    font-weight: $font-weight-base;
+  }
+}

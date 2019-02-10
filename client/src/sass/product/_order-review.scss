@@ -1,0 +1,43 @@
+.review-item {
+  position: relative;
+  width: 100%;
+  margin-bottom: $margin-large;
+
+  &.totals {
+    background: darken($color-body-bg, 2%);
+    padding: $padding-large;
+    ul {
+      margin-bottom: 0;
+    }
+  }
+
+  h6 {
+    text-transform: uppercase;
+    padding-bottom: $padding-base;
+    margin: 0;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: $padding-base;
+    position: relative;
+    margin-bottom: $margin-large + $margin-base;
+
+    li {
+      padding: $padding-5 0;
+      @include flex-space-between();
+      span {
+        opacity: .7;
+        padding-right: $padding-large;
+      }
+      strong {
+        font-weight: normal;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,21 @@
+.an-address-single {
+  position: relative;
+  width: 100%;
+  p {
+    padding-left: $padding-large;
+    position: relative;
+  }
+
+  i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: $color-primary;
+  }
+}
+
+.contact-form {
+  > div {
+    margin-bottom: $margin-medium;
+  }
+}

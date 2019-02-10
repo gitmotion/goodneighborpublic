@@ -1,0 +1,40 @@
+.login-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  background: $color-primary;
+  margin: 0 auto;
+  margin-top: $padding-large * 2;
+  margin-bottom: $padding-large * 2;
+}
+
+.login-fields {
+  position: relative;
+  width: 100%;
+  background: $color-bg-white;
+  padding: $padding-base * 3;
+  top: $padding-large;
+  right: $padding-large;
+  @include an-box-shadow;
+
+  h3 {
+    a {
+      font-size: 13px;
+      font-weight: $font-weight-base;
+      padding-left: $padding-large;
+      color: $font-color-base;
+      opacity: .7;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+    i {
+      font-size: $font-size-h1 * 2;
+    }
+    &.title-404 {
+      font-size: $font-size-h1 * 3;
+
+    }
+  }
+}

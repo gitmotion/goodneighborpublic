@@ -1,0 +1,17 @@
+.panel-body {
+  .recharts-wrapper {
+    width: 100% !important;
+    .recharts-surface {
+      width: 100%;
+    }
+    .recharts-legend-wrapper {
+      .recharts-surface {
+        width: auto;
+      }
+    }
+  }
+  .recharts-responsive-container {
+    height: 300px !important;
+  }
+}
+

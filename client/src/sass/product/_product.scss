@@ -1,0 +1,41 @@
+.readmin-products {
+  position: relative;
+  width: 100%;
+}
+.product-single {
+  position: relative;
+  width: 100%;
+  padding: $padding-medium;
+  padding-bottom: $padding-large;
+  background: $color-bg-white;
+  text-align: center;
+  @include an-box-shadow-small();
+  @include border-radius($border-radius);
+  margin-bottom: $margin-large;
+  img {
+    height: 240px;
+    margin: 0 auto;
+  }
+  .favorite {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+  h5 {
+    padding-top: $padding-small;
+    padding-bottom: $padding-5;
+  }
+  .price {
+    margin: 0;
+    color: $color-primary;
+    padding-bottom: $padding-small;
+  }
+}
+
+
+.table-responsive {
+  table {
+    min-width: 500px;
+  }
+}

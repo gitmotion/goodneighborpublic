@@ -1,0 +1,136 @@
+.sidebar-nav {
+  position: relative;
+  width: 100%;
+  padding-bottom: 80px;
+
+  ul {
+    @include list-unstyled();
+    margin: 0;
+    li {
+      position: relative;
+      &.divider {
+        margin: $padding-base 0;
+        height: 1px;
+        background: rgba($font-color-white, .2);
+      }
+      .menudivider {
+        padding: $padding-base 0;
+      }
+
+      &.has-child {
+        > a {
+          &:before {
+            content: "\f067";
+            font-family: 'FontAwesome';
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            font-size: 12px;
+          }
+          &.active {
+            &:before {
+              content: "\f068";
+            }
+          }
+        }
+      }
+
+      a {
+        padding: $padding-small $padding-base;
+        padding-top: $padding-small - 5;
+        color: $font-color-white;
+        opacity: .8;
+        display: block;
+
+        .material-icons {
+          position: relative;
+          top: 6px;
+          margin-right: $padding-base;
+          color: $white;
+        }
+
+        &:hover {
+          background: rgba(0,0,0, .2);
+        }
+      }
+
+      li {
+        a {
+          padding: $padding-small - 3 $padding-base;
+          padding-left: $padding-large + 24;
+          &:before {
+            content: "\F105";
+            font-family: 'FontAwesome';
+            position:absolute;
+            top: 6px;
+            left: 30px;
+          }
+        }
+
+        .child-menu {
+
+          a {
+            padding-left: $padding-large + 10;
+          }
+        }
+      }
+    }
+  }
+}
+
+.level-two {
+  > a {
+    &.active {
+      .fa-plus {
+        &:before {
+          content: "\f068";
+        }
+      }
+    }
+    .fa-plus {
+    }
+  }
+  .child-menu {
+    a {
+      padding-left: 60px !important;
+      &:before {
+        left: 40px;
+      }
+    }
+  }
+}
+
+
+
+.color-1 {
+  color: #1abc9c;
+}
+
+.color-2 {
+  color: #f39c12;
+}
+
+.color-3 {
+  color: #3498db;
+}
+
+.color-4 {
+  color: #c0392b;
+}
+
+.color-5 {
+  color: #9b59b6;
+}
+
+.color-6 {
+  color: #2ecc71;
+}
+
+.color-7 {
+  color: #f1c40f;
+}
+
+.color-8 {
+  color: #7f8c8d;
+}
+

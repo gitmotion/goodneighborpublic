@@ -1,0 +1,82 @@
+.an-pricing {
+  position: relative;
+  width: 100%;
+  padding: $padding-base * 3 0 $padding-base ;
+}
+.an-pricing-table-single {
+  position: relative;
+  width: 100%;
+  background: $color-bg-white;
+  margin-bottom: $margin-large;
+  @include border-radius($border-radius);
+  @include an-box-shadow();
+  @include transition();
+  text-align: center;
+  padding: $padding-large;
+  padding-bottom: 0;
+
+  &:hover {
+
+  }
+
+
+  .price-header {
+    position: relative;
+    text-align: center;
+
+    .plan-name {
+      margin-top: 0;
+    }
+    .plan-price {
+      color: $color-primary;
+      margin-bottom: 0;
+      font-size: $font-size-h1;
+      span {
+        font-size: $font-size-base;
+        position: relative;
+        top: -13px;
+        padding-right: $padding-small - 5;
+        color: $color-primary;
+      }
+      small {
+        font-size: $font-size-base;
+        color: $font-color-lighter;
+        display: block;
+      }
+    }
+    p {
+      margin: 0;
+      text-transform: uppercase;
+      font-size: $font-size-base;
+      padding-top: $padding-small;
+    }
+  }
+
+  .helper-text {
+    position: relative;
+    padding: $padding-medium + 5 0 0;
+    opacity: .7;
+
+  }
+}
+
+.feature-lists {
+  @extend .list-unstyled;
+  padding: $padding-base 0;
+  text-align: center;
+  margin: 0;
+
+  li {
+    padding: $padding-small - 3 0;
+    color: darken($font-color-light, 10%);
+    border-bottom: 1px solid darken($color-body-bg, 5%);
+    font-size: $font-size-base - 2;
+  }
+}
+
+.price-footer {
+  padding: $padding-medium;
+  position: relative;
+}
+
+
