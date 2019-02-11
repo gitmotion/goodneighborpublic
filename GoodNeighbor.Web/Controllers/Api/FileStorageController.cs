@@ -24,7 +24,6 @@ namespace GoodNeighbor.Web.Controllers.Api
     {
         private IFileStorageService _fileStorageService;
 
-        readonly string awsResourceUrl = "https://sabio-training.s3.us-west-2.amazonaws.com/";
         // Define Required Parameters for AWS Access
         
             //AWS KEYS
